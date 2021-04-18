@@ -8,3 +8,6 @@ class Bot(BaseModel):
     token: str
     state: dict[str, str]
     config: dict[str, Any]
+
+    class Config:
+        orm_mode = True
